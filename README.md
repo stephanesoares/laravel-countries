@@ -1,8 +1,8 @@
 # Laravel Countries
 
-[![Total Downloads](https://poser.pugx.org/webpatser/laravel-countries/downloads.svg)](https://packagist.org/packages/webpatser/laravel-countries)
-[![Latest Stable Version](https://poser.pugx.org/webpatser/laravel-countries/v/stable.svg)](https://packagist.org/packages/webpatser/laravel-countries)
-[![Latest Unstable Version](https://poser.pugx.org/webpatser/laravel-countries/v/unstable.svg)](https://packagist.org/packages/webpatser/laravel-countries)
+[![Total Downloads](https://poser.pugx.org/stephanesoares/laravel-countries/downloads.svg)](https://packagist.org/packages/stephanesoares/laravel-countries)
+[![Latest Stable Version](https://poser.pugx.org/stephanesoares/laravel-countries/v/stable.svg)](https://packagist.org/packages/stephanesoares/laravel-countries)
+[![Latest Unstable Version](https://poser.pugx.org/stephanesoares/laravel-countries/v/unstable.svg)](https://packagist.org/packages/stephanesoares/laravel-countries)
 
 Laravel Countries is a bundle for Laravel, providing Almost ISO 3166_2, 3166_3, currency, Capital and more for all countries.
 
@@ -10,22 +10,22 @@ Laravel Countries is a bundle for Laravel, providing Almost ISO 3166_2, 3166_3, 
 
 ## Installation
 
-Add `webpatser/laravel-countries` to `composer.json`.
+Add `stephanesoares/laravel-countries` to `composer.json`.
 
-    "webpatser/laravel-countries": "dev-master"
+    "stephanesoares/laravel-countries": "dev-master"
     
 Run `composer update` to pull down the latest version of Country List.
 
 Edit `app/config/app.php` and add the `provider` and `filter`
 
     'providers' => [
-        'Webpatser\Countries\CountriesServiceProvider',
+        'StephaneSoares\Countries\CountriesServiceProvider',
     ]
 
 Now add the alias.
 
     'aliases' => [
-        'Countries' => 'Webpatser\Countries\CountriesFacade',
+        'Countries' => 'StephaneSoares\Countries\CountriesFacade',
     ]
     
 
