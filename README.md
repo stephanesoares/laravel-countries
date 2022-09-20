@@ -10,13 +10,11 @@ Laravel Countries is a bundle for Laravel, providing Almost ISO 3166_2, 3166_3, 
 
 ## Installation
 
-Add `stephanesoares/laravel-countries` to `composer.json`.
+Run `composer required stephanesoares/laravel-countries`
 
-    "stephanesoares/laravel-countries": "dev-master"
-    
 Run `composer update` to pull down the latest version of Country List.
 
-Edit `app/config/app.php` and add the `provider` and `filter`
+Edit `config/app.php` and add the `provider` and `filter`
 
     'providers' => [
         'StephaneSoares\Countries\CountriesServiceProvider',
@@ -38,8 +36,9 @@ You can start by publishing the configuration. This is an optional step, it cont
 Next generate the migration file:
 
     $ php artisan countries:migration
-    
-It will generate the `<timestamp>_setup_countries_table.php` migration and the `CountriesSeeder.php` seeder. To make sure the data is seeded insert the following code in the `seeds/DatabaseSeeder.php`
+
+It will generate the `<timestamp>_setup_countries_table.php` migration and the `CountriesSeeder.php` seeder. To make
+sure the data is seeded insert the following code in the `database/seeders/DatabaseSeeder.php`
 
     //Seed the countries
     $this->call('CountriesSeeder');
