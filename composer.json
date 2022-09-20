@@ -36,12 +36,12 @@
 	},
 	"extra": {
 	    "laravel": {
-		"providers": [
-		    "StephaneSoares\\Countries\\CountriesServiceProvider"
-		],
-		"aliases": {
-		    "Countries": "StephaneSoares\\Countries\\CountriesFacade"
+			"providers": [
+				"StephaneSoares\\Countries\\CountriesServiceProvider"
+			],
+			"aliases": {
+				"Countries": "StephaneSoares\\Countries\\CountriesFacade"
+			}
 		}
-	    }
 	}
 }
